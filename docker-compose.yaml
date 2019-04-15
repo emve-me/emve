@@ -1,0 +1,16 @@
+version: '3.5'
+services:
+  backend:
+    build:
+      context: ../emve-server
+    ports:
+    - '4000:4000'
+    volumes:
+      - ../emve-server:/usr/src/app
+  client:
+    build:
+      context: ../emve-client
+    ports:
+    - '3035:3035'
+    volumes:
+      - ../emve-client:/usr/src/app
