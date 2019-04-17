@@ -19,10 +19,10 @@ services:
   db:
     image: postgres:11
     volumes:
-      - ./postgres_data:/var/lib/postgresql/data
+      - ../postgres_data:/var/lib/postgresql/data
     restart: always
   psql:
     image: postgres:11
     depends_on:
       - db
-    command: 'sh -c ''exec psql --no-password -h "postgres" -p "5432" -U postgres'''
+    command: 'sh -c ''exec psql --no-password -h "db" -p "5432" -U postgres'''
