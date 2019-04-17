@@ -7,7 +7,7 @@ services:
     - '4000:4000'
     volumes:
       - ../emve-server:/usr/src/app
-    depends_on: 
+    depends_on:
       - db
   client:
     build:
@@ -25,4 +25,4 @@ services:
     image: postgres:11
     depends_on:
       - db
-    command: 'sh -c ''exec psql --no-password -h "db" -p "5432" -U postgres'''
+    command: 'sh -c ''exec psql --no-password -h "postgres" -p "5432" -U postgres'''
