@@ -7,6 +7,8 @@ services:
     - '4000:4000'
     volumes:
       - ../emve-server:/usr/src/app
+    depends_on:
+      - db
   client:
     build:
       context: ../emve-client
@@ -14,3 +16,13 @@ services:
     - '3035:3035'
     volumes:
       - ../emve-client:/usr/src/app
+  db:
+    image: postgres:11
+    volumes:
+      - ./postgres_data:/var/lib/postgresql/data
+    restart: always
+  psql:
+    image: postgres:11
+    depends_on:
+      - db
+    command: 'sh -c ''exec psql --no-password -h "postgres" -p "5432" -U postgres'''
