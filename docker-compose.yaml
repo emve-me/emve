@@ -22,6 +22,8 @@ services:
       PORT: 3035
     volumes:
       - ../emve-client:/usr/src/app
+    depends_on:
+      - backend
   db:
     image: postgres:11
     container_name: emve_postgres
