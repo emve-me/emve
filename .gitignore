@@ -1,3 +1,5 @@
 /.idea
 /.vscode
 /postgres_data
+/emve-server
+/emve-client
