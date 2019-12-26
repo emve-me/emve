@@ -2,31 +2,36 @@ version: '3.7'
 services:
   backend:
     build:
-      context: ../emve-server
+      context: ./emve-server
     ports:
       - '4000:4000'
     environment:
       PORT: 4000
       DB_HOST: 'db'
       DB_USER: 'postgres'
+      DB_DATABASE: 'emve'
     volumes:
-      - ../emve-server:/usr/src/app
+      - ./emve-server:/usr/src/app
     depends_on:
       - db
   client:
     build:
-      context: ../emve-client
+      context: ./emve-client
     ports:
       - '3035:3035'
     environment:
       PORT: 3035
+      GRAPHQL_ENDPOINT_SERVER: 'http://backend:4000'
+      GRAPHQL_ENDPOINT_CLIENT: 'http://localhost:4000'
+      GRAPHQL_SUBSCRIPTION_ENDPOINT: 'ws://localhost:4000/graphql'
+      BASE_URL: 'http://localhost:3035'
     volumes:
-      - ../emve-client:/usr/src/app
+      - ./emve-client:/usr/src/app
     depends_on:
       - backend
   db:
     image: postgres:11
     container_name: emve_postgres
     volumes:
-      - ../postgres_data:/var/lib/postgresql/data
+      - ./postgres_data:/var/lib/postgresql/data
     restart: always
