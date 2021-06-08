@@ -1,0 +1,62 @@
+{
+  "name": "emve-gql-server",
+  "version": "0.0.1",
+  "description": "emve.me gql server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon --watch src -e ts --exec \"ts-node --files -r dotenv/config src/server\"",
+    "build": "tsc",
+    "start": "node dist/server",
+    "codegen": "apollo client:codegen --target typescript --includes src/**/*.ts",
+    "download-gql-schema": "gql-schema-dl http://localhost:4000",
+    "gql-types": "npm run download-gql-schema && gql2ts schema.graphql -o graphqlTypes.d.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rlancer/emve-gql-server.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rlancer/emve-gql-server/issues"
+  },
+  "homepage": "https://github.com/rlancer/emve-gql-server#readme",
+  "dependencies": {
+    "@axelspringer/graphql-google-pubsub": "^2.1.0",
+    "@types/pg": "^7.14.0",
+    "apollo-server": "^2.9.14",
+    "dataloader": "^1.4.0",
+    "gapi-to-graphql": "^2.0.7",
+    "google-auth-library": "^5.7.0",
+    "graphql": "^14.5.8",
+    "graphql-postgres-subscriptions": "^1.0.5",
+    "graphql-subscriptions": "^1.1.0",
+    "jsonwebtoken": "^8.5.1",
+    "knex": "^0.95.6",
+    "pg": "^8.6.0"
+  },
+  "devDependencies": {
+    "@types/jsonwebtoken": "^8.3.5",
+    "@types/shortid": "0.0.29",
+    "apollo": "^2.21.2",
+    "dotenv": "^8.2.0",
+    "gql-schema-dl": "0.0.5",
+    "gql2ts": "^1.10.1",
+    "husky": "^3.1.0",
+    "nodemon": "^1.19.4",
+    "prettier": "^1.19.1",
+    "pretty-quick": "^1.11.1",
+    "ts-node": "^8.5.4",
+    "typescript": "^3.7.4"
+  },
+  "engines": {
+    "node": "10.x.x",
+    "npm": "6.9.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  }
+}
