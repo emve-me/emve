@@ -3,6 +3,7 @@ services:
   backend:
     build:
       context: ./emve-server
+      target: dev
     ports:
       - '4000:4000'
     environment:
@@ -17,6 +18,7 @@ services:
   client:
     build:
       context: ./emve-client
+      target: dev
     ports:
       - '3035:3035'
     environment:
