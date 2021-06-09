@@ -1,18 +1,23 @@
-# TODO
+emve.me
+---
+ 
+  emve.me is a virtual video jukebox, use one device as the player and eveyone can then queue up videos with their phone
+
+
+## Running locally
+
+```bash
+git clone git@github.com:emve-me/emve.git
+docker-compose up 
+```
+ 
+## TODO
 
 - Optimistic ui / update cache from mutations, relying on subscription data for channel sate now
-- Play pause / other host controls
 - Global style variables
 - Pretty errors from gql
 - Paging
 
-# Agenda
-
-- Demo & Background
-  - Inspired by the Nexus Q (predecessor to Chrome Cast)
-  - Made emve ~6 years ago
-  - Remade it ~4 years ago
-  - Made it again ~2.5 weeks ago (mainly wanted to play around with GraphQL subscriptions)
 - Dev opps
   - Docker Compose for local development
   - GitLab CI / CD for deployment to App Engine
