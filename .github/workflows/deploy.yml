@@ -16,7 +16,12 @@ jobs:
           service_account_key: ${{ secrets.GCP_SA_KEY }}
       - name: Auth GCR
         run: gcloud auth configure-docker
-
+      - name: Build and push
+        uses: docker/build-push-action@v2
+        with:
+          context: ./emve-client
+          push: true
+          tags: us.gcr.io/emveme/emve-web-backend/emve-backend@testpush:githubactions
 #      - uses: RafikFarhad/push-to-gcr-github-action@v3.0.2
 #        with:
 #          gcloud_service_key: ${{ secrets.GCP_SA_KEY_B64 }}
