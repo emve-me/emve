@@ -7,7 +7,7 @@ emve.me is a virtual video jukebox, use one device as the player and everyone ca
 <img style="padding-right:8px;max-width: 650px" alt='emve client' src='https://user-images.githubusercontent.com/1339007/121413584-d2acff00-c933-11eb-8307-b14fc2b55c40.png' />
 
 ### Controller view
-<img style="margin:0 auto;max-width: 300px" alt='emve client' src='https://user-images.githubusercontent.com/1339007/121434946-17dd2b00-c94c-11eb-9810-a04bef4111e8.png' />
+<img style="width:350px" alt='emve client' src='https://user-images.githubusercontent.com/1339007/121434946-17dd2b00-c94c-11eb-9810-a04bef4111e8.png' />
 
 ## Running locally
 
