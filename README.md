@@ -15,20 +15,14 @@ docker-compose up
 
 Visit localhost:3035 to see it in action 
 
-## TODO
+## Infrastructure
 
-- Optimistic ui / update cache from mutations, relying on subscription data for channel sate now
-- Global style variables
-- Pretty errors from gql
-- Paging
-
-- Dev opps
-    - Docker Compose for local development
-    - GitLab CI / CD for deployment to App Engine
-        - [Uses custom utilities to aid deployment](https://medium.com/@robizm/gitlab-ci-cd-tooling-for-deploying-app-engine-node-apps-e2f32d5226e3)
-    - Note on AppEngine
-        - App is cloud agnostic, not using anything like Cloud Firestore, or AppSync that would make it harder port to a different provider
-- Stack
+### GitHub Actions - CI/C
+    - On pushes to master
+    - Builds and pushes to
+    - Deploys new revision to Google Cloud Run  
+  
+### Stack
     - Universal
         - Typescript
             - Type gen from GraphQL
@@ -70,9 +64,17 @@ Visit localhost:3035 to see it in action
             - Channel IDs are in a custom base 26 encoded alphabet (the alphabet but scrambled) to avoid users being able to guess channel IDs of an ongoing sessions
             - Channels ID start at 26^4 to minimize guessability
 
+
+## TODO
+
+- Optimistic ui / update cache from mutations, relying on subscription data for channel sate now
+- Global style variables
+- Pretty errors from gql
+- Paging
+
 # Wish list
 
-- Live Queries, would cut down on complexity a lot
+- Live Queries, would cut down on complexity 
 - Typescript friendlier database library with typegen from schema, a few systems like that out there
 
 # Roadmap
