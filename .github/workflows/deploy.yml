@@ -20,12 +20,14 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           context: ./emve-client
+          target: prod
           push: true
           tags: us.gcr.io/emveme/client/web:${{ github.sha }}
       - name: Build & push - API
         uses: docker/build-push-action@v2
         with:
           context: ./emve-server
+          target: prod
           push: true
           tags: us.gcr.io/emveme/api/graphql:${{ github.sha }}
     #
