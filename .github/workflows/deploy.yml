@@ -15,12 +15,12 @@ jobs:
           project_id: ${{ env.PROJECT_ID }}
           service_account_key: ${{ secrets.GCP_SA_KEY }}
       - uses: RafikFarhad/push-to-gcr-github-action@v3.0.2
-          with:
-            gcloud_service_key: ${{ secrets.GCP_SA_KEY }}
-            registry: gcr.io
-            project_id: ${{ env.PROJECT_ID }}
-            image_name: emve-server
-            context: ./emve-server
+        with:
+          gcloud_service_key: ${{ secrets.GCP_SA_KEY }}
+          registry: gcr.io
+          project_id: ${{ env.PROJECT_ID }}
+          image_name: emve-server
+          context: ./emve-server
 #      - name: Deploy to Cloud Run
 #        run: |-
 #          gcloud run deploy $SERVICE \
