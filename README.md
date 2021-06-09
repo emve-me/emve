@@ -1,6 +1,8 @@
 emve.me
 ---
-> Emve.me is a personal project of [Robert Lancer](https://github.com/rlancer), developed for just for fun! Open to contributors.  
+> Emve.me is a personal project of [Robert Lancer](https://github.com/rlancer), developed for just for fun! 
+> 
+> It uses my [gapi-to-graphql](https://github.com/rlancer/gapi-to-graphql) library which converts Google's Data API's to GraphQL 
 
 Emve.me is a virtual video jukebox! Use your TV as the player and get a group of friends to queue up videos using their phone.
 
@@ -78,12 +80,12 @@ Visit localhost:3035 to see it in action
 - Pretty errors from gql
 - Paging
 
-# Wish list
+## Wish list
 
 - Live Queries, would cut down on complexity 
 - Typescript friendlier database library with typegen from schema, a few systems like that out there
 
-# Roadmap
+## Roadmap
 
 - Talk to someone at YouTube to see if this is kosher, maybe for YTRed subscribers
 - Restore lost player sessions
