@@ -1,8 +1,6 @@
 emve.me
----
- 
-  emve.me is a virtual video jukebox, use one device as the player and eveyone can then queue up videos with their phone
-
+--- 
+emve.me is a virtual video jukebox, use one device as the player and eveyone can then queue up videos with their phone
 
 ## Running locally
 
@@ -10,13 +8,6 @@ emve.me
 git clone git@github.com:emve-me/emve.git
 docker-compose up 
 ```
- 
-## TODO
-
-- Optimistic ui / update cache from mutations, relying on subscription data for channel sate now
-- Global style variables
-- Pretty errors from gql
-- Paging
 
 - Dev opps
   - Docker Compose for local development
@@ -66,16 +57,18 @@ docker-compose up
       - Channel IDs are in a custom base 26 encoded alphabet (the alphabet but scrambled) to avoid users being able to guess channel IDs of an ongoing sessions
       - Channels ID start at 26^4 to minimize guessability
 
-# Wish list
+## Tech Wish list
 
 - Live Queries, would cut down on complexity a lot
-- Typescript friendlier database library with typegen from schema, a few systems like that out there
+- Typescript database library to replace Knex 
 
-# Roadmap
+## Roadmap
 
+- Optimistic ui / update cache from mutations, relying on subscription data for channel sate now
+- Global style variables
+- Pretty errors from gql
+- Paging
 - Talk to someone at YouTube to see if this is kosher, maybe for YTRed subscribers
-- Restore lost player sessions
-  - If your player closes and you reender, it should know you have a session going on and ask you to continue it
 - Export a playlist of your party to YouTube / Spotifiy
 - Playback parties
 - Shout box
