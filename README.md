@@ -1,7 +1,7 @@
 emve.me
 ---
 
-emve.me is a virtual video jukebox, use one device as the player and everyone can then queue up videos with their phone
+Emve.me is a virtual video jukebox! Use your TV as the player and get a group of friends to queue up videos using their phone.
 
 ### Player
 <img style="padding-right:8px;max-width: 650px" alt='emve client' src='https://user-images.githubusercontent.com/1339007/121413584-d2acff00-c933-11eb-8307-b14fc2b55c40.png' />
@@ -24,9 +24,9 @@ Visit localhost:3035 to see it in action
 ## Infrastructure
 
 * Resources
-  * CloudSQL
-  * Google Cloud Run
-  * Google Cloud Pub/Sub
+    * Google Cloud Run  
+    * CloudSQL
+    * Google Cloud Pub/Sub
 
 * GitHub Actions - CI / CD
   * On pushes to master
