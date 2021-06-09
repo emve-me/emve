@@ -38,6 +38,6 @@ jobs:
           --image us.gcr.io/emveme/api/graphql:${{ github.sha }}
       - name: Deploy Web Client
         run: |-
-          gcloud run deploy emve-backend \
+          gcloud run deploy enve-frontend \
           --region us-central1	\
           --image us.gcr.io/emveme/client/web:${{ github.sha }}
