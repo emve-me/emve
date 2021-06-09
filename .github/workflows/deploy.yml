@@ -29,7 +29,6 @@ jobs:
           push: true
           tags: us.gcr.io/emveme/api/graphql:${{ github.sha }}
     #
-  - uses: RafikFarhad/push-to-gcr-github-action@v3.0.2
 #        with:
 #          gcloud_service_key: ${{ secrets.GCP_SA_KEY_B64 }}
 #          registry: gcr.io
