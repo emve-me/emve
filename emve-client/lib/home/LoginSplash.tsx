@@ -152,7 +152,7 @@ const LoginSplash: React.FC = () => {
           <Login />
         </div>
       </div>
-      <div className="footer">&copy; {new Date().getFullYear()} emve.me</div>
+      <div className="footer">&copy; {new Date().getFullYear()} emve.me &nbsp;&middot;&nbsp; <a href='https://github.com/rlancer/emve'>Open source</a> </div>
     </Shell>
   )
 }
