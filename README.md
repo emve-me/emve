@@ -1,5 +1,6 @@
 emve.me
 ---
+> Emve.me is a personal project of [Robert Lancer](https://github.com/rlancer), developed for just for fun! Open to contributors.  
 
 Emve.me is a virtual video jukebox! Use your TV as the player and get a group of friends to queue up videos using their phone.
 
