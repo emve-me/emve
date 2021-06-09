@@ -14,7 +14,10 @@ emve.me
 
 ## Running locally
 
-In order to run locally you'll need to crete oauth credentials
+* Generate an OAuth client ID and secret for Google Login by following [this guide](https://developers.google.com/identity/sign-in/web/sign-in)
+* Generate a Google API Key by following [this guide](https://developers.google.com/youtube/registering_an_application)
+
+Create a `.env` file by based on the `.env.example` files under the`emve-client` / `emve-server` directories
 
 ```bash
 git clone git@github.com:emve-me/emve.git
@@ -33,8 +36,8 @@ Visit localhost:3035 to see it in action
 * GitHub Actions - CI / CD
   * On pushes to master
     * Builds and pushes to Google Container Registry 
-    * Deploys new revision to Google Cloud Run  
-  
+    * Deploys new revision to Google Cloud Run
+    
 ## Stack
    * Universal
        * Typescript
@@ -74,7 +77,7 @@ Visit localhost:3035 to see it in action
 
 ## TODO
 
-- Optimistic ui / update cache from mutations, relying on subscription data for channel sate now
+- Optimistic UI / update cache from mutations, relying on subscription data for channel sate now
 - Global style variables
 - Pretty errors from gql
 - Paging
