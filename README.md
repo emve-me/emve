@@ -3,11 +3,12 @@ emve.me
 
 emve.me is a virtual video jukebox, use one device as the player and everyone can then queue up videos with their phone
 
-### Player view
+### Player
 <img style="padding-right:8px;max-width: 650px" alt='emve client' src='https://user-images.githubusercontent.com/1339007/121413584-d2acff00-c933-11eb-8307-b14fc2b55c40.png' />
 
-### Controller view
-<img style="width:350px;max-width:350px" alt='emve client' src='https://user-images.githubusercontent.com/1339007/121434946-17dd2b00-c94c-11eb-9810-a04bef4111e8.png' />
+### Remote
+![Remote](https://user-images.githubusercontent.com/1339007/121435957-bddd6500-c94d-11eb-97cd-0b67f7dd6073.png)
+
 
 ## Running locally
 
