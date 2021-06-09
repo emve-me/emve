@@ -1,17 +1,16 @@
 emve.me
 ---
-> Emve.me is a personal project of [Robert Lancer](https://github.com/rlancer), developed for just for fun! 
-> 
+> [Emve.me](https://emve.me)  is a personal project of [Robert Lancer](https://github.com/rlancer), developed for just for fun!
 > It uses my [gapi-to-graphql](https://github.com/rlancer/gapi-to-graphql) library which converts Google's Data API's to GraphQL 
 
-Emve.me is a virtual video jukebox! Use your TV as the player and get a group of friends to queue up videos using their phone.
+[Emve.me](https://emve.me) is a virtual video jukebox! Use your TV as the player and get a group of friends to queue up videos using their phone.
 
 ### Player
 <img style="padding-right:8px;max-width: 650px" alt='emve client' src='https://user-images.githubusercontent.com/1339007/121413584-d2acff00-c933-11eb-8307-b14fc2b55c40.png' />
 
 ### Remote
-![Remote](https://user-images.githubusercontent.com/1339007/121435957-bddd6500-c94d-11eb-97cd-0b67f7dd6073.png)
 
+![Remote](https://user-images.githubusercontent.com/1339007/121435957-bddd6500-c94d-11eb-97cd-0b67f7dd6073.png)
 
 ## Running locally
 
